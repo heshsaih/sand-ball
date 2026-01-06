@@ -1,0 +1,39 @@
+#pragma kernel CSMain
+#pragma kernel FillWhite
+#pragma kernel DrawSpot
+
+RWTexture2D<float4> sandImage;
+float colorValueToAdd;
+float resolution;
+float posX;
+float posY;
+float spotSize;
+
+[numthreads(8,8,1)]
+void CSMain (uint3 id : SV_DispatchThreadID)
+{
+    sandImage[id.xy] += float4(colorValueToAdd, colorValueToAdd, colorValueToAdd, colorValueToAdd);
+}
+
+[numthreads(8,8,1)]
+void FillWhite (uint3 id : SV_DispatchThreadID)
+{
+    sandImage[id.xy] = float4(1.0, 1.0, 1.0, 1.0);
+}
+
+[numthreads(8,8,1)]
+void DrawSpot (uint3 id : SV_DispatchThreadID)
+{
+    float x = id.x / resolution;
+    float y = id.y / resolution;
+
+    // co to kurwa jest xdddd
+    float value = sqrt(((x - posX / resolution) * (x - posX / resolution) + (y - posY / resolution) * (y - posY / resolution))) * 100;
+
+    if (value < spotSize)
+    {
+        if (value / spotSize > sandImage[id.xy].x) return;
+
+        sandImage[id.xy] = float4(value, value, value, value) / spotSize;
+    }
+}
