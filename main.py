@@ -1,6 +1,13 @@
 import cv2
 import time
 from cvzone.HandTrackingModule import HandDetector
+import socket
+
+
+def normalize(point):
+    new_x = ((point[0] - 0) / (1280)) * (7 - (-7)) + (-7)
+    new_y = ((point[1] - 0) / (720)) * (4 - (-4)) + (-4)
+    return [new_x, new_y]
 
 cap = cv2.VideoCapture(0)
 
@@ -13,6 +20,10 @@ previous_hands = []
 
 previous_time = time.time()
 how_long_stable = 0
+sent = False
+
+socket = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
+addr = ("127.0.0.1", 42069)
 
 while True:
     current_time = time.time()
@@ -34,6 +45,7 @@ while True:
 
                 if difference_x > tolerance or difference_y > tolerance:
                     is_stable = False
+                    sent = False
                     break
             
             if is_stable:
@@ -46,8 +58,18 @@ while True:
         how_long_stable = 0
 
 
-    if how_long_stable > 3:
-        print("detected!!!")
+    if how_long_stable > 3 and not sent:
+        data = []
+        landmarks = previous_hands[0]["lmList"]
+
+        for (_, lm) in enumerate(landmarks):
+            new_point = normalize(lm)
+            data.append(new_point)
+        
+        print("Sending data...")
+        socket.sendto(str.encode(str(data)), addr)
+        how_long_stable = 0
+        sent = True
 
     previous_hands = hands
     previous_time = current_time
