@@ -236,7 +236,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: b63571c3a3165e74d96b96ff33e12215, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 1.08
+      value: 1.12
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: b63571c3a3165e74d96b96ff33e12215, type: 3}
       propertyPath: m_LocalRotation.w
@@ -775,7 +775,7 @@ MonoBehaviour:
   sandRT: {fileID: 0}
   colorValueToAdd: 0.0025
   resolution: 128
-  spotSize: 10
+  spotSize: 15
 --- !u!1 &43719354 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: b63571c3a3165e74d96b96ff33e12215, type: 3}
@@ -823,7 +823,7 @@ MonoBehaviour:
   sandRT: {fileID: 0}
   colorValueToAdd: 0.0025
   resolution: 128
-  spotSize: 10
+  spotSize: 15
 --- !u!1 &53319229 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: b63571c3a3165e74d96b96ff33e12215, type: 3}
@@ -871,7 +871,7 @@ MonoBehaviour:
   sandRT: {fileID: 0}
   colorValueToAdd: 0.0025
   resolution: 128
-  spotSize: 10
+  spotSize: 15
 --- !u!1 &67562336 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: b63571c3a3165e74d96b96ff33e12215, type: 3}
@@ -919,7 +919,7 @@ MonoBehaviour:
   sandRT: {fileID: 0}
   colorValueToAdd: 0.0025
   resolution: 128
-  spotSize: 10
+  spotSize: 15
 --- !u!1001 &80271253
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1054,7 +1054,7 @@ MonoBehaviour:
   sandRT: {fileID: 0}
   colorValueToAdd: 0.0025
   resolution: 128
-  spotSize: 10
+  spotSize: 15
 --- !u!1 &92055927 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: b63571c3a3165e74d96b96ff33e12215, type: 3}
@@ -1102,7 +1102,7 @@ MonoBehaviour:
   sandRT: {fileID: 0}
   colorValueToAdd: 0.0025
   resolution: 128
-  spotSize: 10
+  spotSize: 15
 --- !u!1001 &127433847
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1759,7 +1759,7 @@ MonoBehaviour:
   sandRT: {fileID: 0}
   colorValueToAdd: 0.0025
   resolution: 128
-  spotSize: 10
+  spotSize: 15
 --- !u!1 &207577776 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: b63571c3a3165e74d96b96ff33e12215, type: 3}
@@ -1807,7 +1807,7 @@ MonoBehaviour:
   sandRT: {fileID: 0}
   colorValueToAdd: 0.0025
   resolution: 128
-  spotSize: 10
+  spotSize: 15
 --- !u!1001 &216490802
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1942,7 +1942,7 @@ MonoBehaviour:
   sandRT: {fileID: 0}
   colorValueToAdd: 0.0025
   resolution: 128
-  spotSize: 10
+  spotSize: 15
 --- !u!1 &229665557 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: b63571c3a3165e74d96b96ff33e12215, type: 3}
@@ -1990,7 +1990,7 @@ MonoBehaviour:
   sandRT: {fileID: 0}
   colorValueToAdd: 0.0025
   resolution: 128
-  spotSize: 10
+  spotSize: 15
 --- !u!1001 &292193680
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2125,7 +2125,7 @@ MonoBehaviour:
   sandRT: {fileID: 0}
   colorValueToAdd: 0.0025
   resolution: 128
-  spotSize: 10
+  spotSize: 15
 --- !u!1 &298541243 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: b63571c3a3165e74d96b96ff33e12215, type: 3}
@@ -2173,7 +2173,7 @@ MonoBehaviour:
   sandRT: {fileID: 0}
   colorValueToAdd: 0.0025
   resolution: 128
-  spotSize: 10
+  spotSize: 15
 --- !u!1001 &317834308
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2308,7 +2308,7 @@ MonoBehaviour:
   sandRT: {fileID: 0}
   colorValueToAdd: 0.0025
   resolution: 128
-  spotSize: 10
+  spotSize: 15
 --- !u!1 &330585543
 GameObject:
   m_ObjectHideFlags: 0
@@ -2580,7 +2580,7 @@ MonoBehaviour:
   sandRT: {fileID: 0}
   colorValueToAdd: 0.0025
   resolution: 128
-  spotSize: 10
+  spotSize: 15
 --- !u!1 &377402861 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: b63571c3a3165e74d96b96ff33e12215, type: 3}
@@ -2628,7 +2628,7 @@ MonoBehaviour:
   sandRT: {fileID: 0}
   colorValueToAdd: 0.0025
   resolution: 128
-  spotSize: 10
+  spotSize: 15
 --- !u!1 &410087039
 GameObject:
   m_ObjectHideFlags: 0
@@ -2890,7 +2890,7 @@ MonoBehaviour:
   sandRT: {fileID: 0}
   colorValueToAdd: 0.0025
   resolution: 128
-  spotSize: 10
+  spotSize: 15
 --- !u!1001 &446542137
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3025,7 +3025,7 @@ MonoBehaviour:
   sandRT: {fileID: 0}
   colorValueToAdd: 0.0025
   resolution: 128
-  spotSize: 10
+  spotSize: 15
 --- !u!1001 &458935866
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3508,7 +3508,7 @@ MonoBehaviour:
   sandRT: {fileID: 0}
   colorValueToAdd: 0.0025
   resolution: 128
-  spotSize: 10
+  spotSize: 15
 --- !u!1 &536506844 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: b63571c3a3165e74d96b96ff33e12215, type: 3}
@@ -3556,7 +3556,7 @@ MonoBehaviour:
   sandRT: {fileID: 0}
   colorValueToAdd: 0.0025
   resolution: 128
-  spotSize: 10
+  spotSize: 15
 --- !u!1001 &545046253
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3865,7 +3865,7 @@ MonoBehaviour:
   sandRT: {fileID: 0}
   colorValueToAdd: 0.0025
   resolution: 128
-  spotSize: 10
+  spotSize: 15
 --- !u!1 &603178607 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: b63571c3a3165e74d96b96ff33e12215, type: 3}
@@ -3913,7 +3913,7 @@ MonoBehaviour:
   sandRT: {fileID: 0}
   colorValueToAdd: 0.0025
   resolution: 128
-  spotSize: 10
+  spotSize: 15
 --- !u!1 &616359122 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: b63571c3a3165e74d96b96ff33e12215, type: 3}
@@ -3961,7 +3961,7 @@ MonoBehaviour:
   sandRT: {fileID: 0}
   colorValueToAdd: 0.0025
   resolution: 128
-  spotSize: 10
+  spotSize: 15
 --- !u!1001 &617565245
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4270,7 +4270,7 @@ MonoBehaviour:
   sandRT: {fileID: 0}
   colorValueToAdd: 0.0025
   resolution: 128
-  spotSize: 10
+  spotSize: 15
 --- !u!1 &658485729 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: b63571c3a3165e74d96b96ff33e12215, type: 3}
@@ -4318,7 +4318,7 @@ MonoBehaviour:
   sandRT: {fileID: 0}
   colorValueToAdd: 0.0025
   resolution: 128
-  spotSize: 10
+  spotSize: 15
 --- !u!1001 &673703392
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4540,7 +4540,7 @@ MonoBehaviour:
   sandRT: {fileID: 0}
   colorValueToAdd: 0.0025
   resolution: 128
-  spotSize: 10
+  spotSize: 15
 --- !u!1 &749439177 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: b63571c3a3165e74d96b96ff33e12215, type: 3}
@@ -4588,7 +4588,7 @@ MonoBehaviour:
   sandRT: {fileID: 0}
   colorValueToAdd: 0.0025
   resolution: 128
-  spotSize: 10
+  spotSize: 15
 --- !u!1 &750335969 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: b63571c3a3165e74d96b96ff33e12215, type: 3}
@@ -4636,7 +4636,7 @@ MonoBehaviour:
   sandRT: {fileID: 0}
   colorValueToAdd: 0.0025
   resolution: 128
-  spotSize: 10
+  spotSize: 15
 --- !u!1001 &758665003
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5081,7 +5081,7 @@ MonoBehaviour:
   sandRT: {fileID: 0}
   colorValueToAdd: 0.0025
   resolution: 128
-  spotSize: 10
+  spotSize: 15
 --- !u!1 &833639849 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: b63571c3a3165e74d96b96ff33e12215, type: 3}
@@ -5129,7 +5129,7 @@ MonoBehaviour:
   sandRT: {fileID: 0}
   colorValueToAdd: 0.0025
   resolution: 128
-  spotSize: 10
+  spotSize: 15
 --- !u!1001 &838298924
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5351,7 +5351,7 @@ MonoBehaviour:
   sandRT: {fileID: 0}
   colorValueToAdd: 0.0025
   resolution: 128
-  spotSize: 10
+  spotSize: 15
 --- !u!1001 &884436974
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5486,7 +5486,7 @@ MonoBehaviour:
   sandRT: {fileID: 0}
   colorValueToAdd: 0.0025
   resolution: 128
-  spotSize: 10
+  spotSize: 15
 --- !u!1 &923537673 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: b63571c3a3165e74d96b96ff33e12215, type: 3}
@@ -5534,7 +5534,7 @@ MonoBehaviour:
   sandRT: {fileID: 0}
   colorValueToAdd: 0.0025
   resolution: 128
-  spotSize: 10
+  spotSize: 15
 --- !u!1001 &929379982
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6104,7 +6104,7 @@ MonoBehaviour:
   sandRT: {fileID: 0}
   colorValueToAdd: 0.0025
   resolution: 128
-  spotSize: 10
+  spotSize: 15
 --- !u!1 &1005489289 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: b63571c3a3165e74d96b96ff33e12215, type: 3}
@@ -6152,7 +6152,7 @@ MonoBehaviour:
   sandRT: {fileID: 0}
   colorValueToAdd: 0.0025
   resolution: 128
-  spotSize: 10
+  spotSize: 15
 --- !u!1 &1009035935 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: b63571c3a3165e74d96b96ff33e12215, type: 3}
@@ -6200,7 +6200,7 @@ MonoBehaviour:
   sandRT: {fileID: 0}
   colorValueToAdd: 0.0025
   resolution: 128
-  spotSize: 10
+  spotSize: 15
 --- !u!1 &1010233662 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: b63571c3a3165e74d96b96ff33e12215, type: 3}
@@ -6248,7 +6248,7 @@ MonoBehaviour:
   sandRT: {fileID: 0}
   colorValueToAdd: 0.0025
   resolution: 128
-  spotSize: 10
+  spotSize: 15
 --- !u!1001 &1026154833
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6383,7 +6383,7 @@ MonoBehaviour:
   sandRT: {fileID: 0}
   colorValueToAdd: 0.0025
   resolution: 128
-  spotSize: 10
+  spotSize: 15
 --- !u!1001 &1035746704
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6518,7 +6518,7 @@ MonoBehaviour:
   sandRT: {fileID: 0}
   colorValueToAdd: 0.0025
   resolution: 128
-  spotSize: 10
+  spotSize: 15
 --- !u!1 &1065029187 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: b63571c3a3165e74d96b96ff33e12215, type: 3}
@@ -6566,7 +6566,7 @@ MonoBehaviour:
   sandRT: {fileID: 0}
   colorValueToAdd: 0.0025
   resolution: 128
-  spotSize: 10
+  spotSize: 15
 --- !u!1001 &1094157491
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6788,7 +6788,7 @@ MonoBehaviour:
   sandRT: {fileID: 0}
   colorValueToAdd: 0.0025
   resolution: 128
-  spotSize: 10
+  spotSize: 15
 --- !u!1001 &1137748329
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7010,7 +7010,7 @@ MonoBehaviour:
   sandRT: {fileID: 0}
   colorValueToAdd: 0.0025
   resolution: 128
-  spotSize: 10
+  spotSize: 15
 --- !u!1001 &1183925446
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7145,7 +7145,7 @@ MonoBehaviour:
   sandRT: {fileID: 0}
   colorValueToAdd: 0.0025
   resolution: 128
-  spotSize: 10
+  spotSize: 15
 --- !u!1001 &1208801332
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7280,7 +7280,7 @@ MonoBehaviour:
   sandRT: {fileID: 0}
   colorValueToAdd: 0.0025
   resolution: 128
-  spotSize: 10
+  spotSize: 15
 --- !u!1001 &1225759758
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7415,7 +7415,7 @@ MonoBehaviour:
   sandRT: {fileID: 0}
   colorValueToAdd: 0.0025
   resolution: 128
-  spotSize: 10
+  spotSize: 15
 --- !u!1 &1239473860 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: b63571c3a3165e74d96b96ff33e12215, type: 3}
@@ -7463,7 +7463,7 @@ MonoBehaviour:
   sandRT: {fileID: 0}
   colorValueToAdd: 0.0025
   resolution: 128
-  spotSize: 10
+  spotSize: 15
 --- !u!1001 &1241927167
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7772,7 +7772,7 @@ MonoBehaviour:
   sandRT: {fileID: 0}
   colorValueToAdd: 0.0025
   resolution: 128
-  spotSize: 10
+  spotSize: 15
 --- !u!1 &1294621572 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: b63571c3a3165e74d96b96ff33e12215, type: 3}
@@ -7820,7 +7820,7 @@ MonoBehaviour:
   sandRT: {fileID: 0}
   colorValueToAdd: 0.0025
   resolution: 128
-  spotSize: 10
+  spotSize: 15
 --- !u!1 &1297901178 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: b63571c3a3165e74d96b96ff33e12215, type: 3}
@@ -7868,7 +7868,7 @@ MonoBehaviour:
   sandRT: {fileID: 0}
   colorValueToAdd: 0.0025
   resolution: 128
-  spotSize: 10
+  spotSize: 15
 --- !u!1 &1319648720 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: b63571c3a3165e74d96b96ff33e12215, type: 3}
@@ -7916,7 +7916,7 @@ MonoBehaviour:
   sandRT: {fileID: 0}
   colorValueToAdd: 0.0025
   resolution: 128
-  spotSize: 10
+  spotSize: 15
 --- !u!1 &1360858178 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: b63571c3a3165e74d96b96ff33e12215, type: 3}
@@ -7964,7 +7964,7 @@ MonoBehaviour:
   sandRT: {fileID: 0}
   colorValueToAdd: 0.0025
   resolution: 128
-  spotSize: 10
+  spotSize: 15
 --- !u!1 &1373862298 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 837300432033449834, guid: d8a7fe7da90660d4296e32cf47267be5, type: 3}
@@ -8065,7 +8065,7 @@ MonoBehaviour:
   sandRT: {fileID: 0}
   colorValueToAdd: 0.0025
   resolution: 128
-  spotSize: 10
+  spotSize: 15
 --- !u!1 &1396613204 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: b63571c3a3165e74d96b96ff33e12215, type: 3}
@@ -8113,7 +8113,7 @@ MonoBehaviour:
   sandRT: {fileID: 0}
   colorValueToAdd: 0.0025
   resolution: 128
-  spotSize: 10
+  spotSize: 15
 --- !u!1 &1400986438
 GameObject:
   m_ObjectHideFlags: 0
@@ -8360,7 +8360,7 @@ MonoBehaviour:
   sandRT: {fileID: 0}
   colorValueToAdd: 0.0025
   resolution: 128
-  spotSize: 10
+  spotSize: 15
 --- !u!1 &1437612860 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: b63571c3a3165e74d96b96ff33e12215, type: 3}
@@ -8408,7 +8408,7 @@ MonoBehaviour:
   sandRT: {fileID: 0}
   colorValueToAdd: 0.0025
   resolution: 128
-  spotSize: 10
+  spotSize: 15
 --- !u!1 &1460978845 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: b63571c3a3165e74d96b96ff33e12215, type: 3}
@@ -8456,7 +8456,7 @@ MonoBehaviour:
   sandRT: {fileID: 0}
   colorValueToAdd: 0.0025
   resolution: 128
-  spotSize: 10
+  spotSize: 15
 --- !u!1001 &1470732235
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8591,7 +8591,7 @@ MonoBehaviour:
   sandRT: {fileID: 0}
   colorValueToAdd: 0.0025
   resolution: 128
-  spotSize: 10
+  spotSize: 15
 --- !u!1 &1497859149 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: b63571c3a3165e74d96b96ff33e12215, type: 3}
@@ -8639,7 +8639,7 @@ MonoBehaviour:
   sandRT: {fileID: 0}
   colorValueToAdd: 0.0025
   resolution: 128
-  spotSize: 10
+  spotSize: 15
 --- !u!1 &1506619307 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: b63571c3a3165e74d96b96ff33e12215, type: 3}
@@ -8687,7 +8687,7 @@ MonoBehaviour:
   sandRT: {fileID: 0}
   colorValueToAdd: 0.0025
   resolution: 128
-  spotSize: 10
+  spotSize: 15
 --- !u!1 &1507367188 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: b63571c3a3165e74d96b96ff33e12215, type: 3}
@@ -8735,7 +8735,7 @@ MonoBehaviour:
   sandRT: {fileID: 0}
   colorValueToAdd: 0.0025
   resolution: 128
-  spotSize: 10
+  spotSize: 15
 --- !u!1 &1515829445 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: b63571c3a3165e74d96b96ff33e12215, type: 3}
@@ -8783,7 +8783,7 @@ MonoBehaviour:
   sandRT: {fileID: 0}
   colorValueToAdd: 0.0025
   resolution: 128
-  spotSize: 10
+  spotSize: 15
 --- !u!1 &1548603391 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: b63571c3a3165e74d96b96ff33e12215, type: 3}
@@ -8831,7 +8831,7 @@ MonoBehaviour:
   sandRT: {fileID: 0}
   colorValueToAdd: 0.0025
   resolution: 128
-  spotSize: 10
+  spotSize: 15
 --- !u!1 &1550979582 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: b63571c3a3165e74d96b96ff33e12215, type: 3}
@@ -8879,7 +8879,7 @@ MonoBehaviour:
   sandRT: {fileID: 0}
   colorValueToAdd: 0.0025
   resolution: 128
-  spotSize: 10
+  spotSize: 15
 --- !u!1 &1565051096 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: b63571c3a3165e74d96b96ff33e12215, type: 3}
@@ -8927,7 +8927,7 @@ MonoBehaviour:
   sandRT: {fileID: 0}
   colorValueToAdd: 0.0025
   resolution: 128
-  spotSize: 10
+  spotSize: 15
 --- !u!1001 &1569368883
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9062,7 +9062,7 @@ MonoBehaviour:
   sandRT: {fileID: 0}
   colorValueToAdd: 0.0025
   resolution: 128
-  spotSize: 10
+  spotSize: 15
 --- !u!1001 &1591318132
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9197,7 +9197,7 @@ MonoBehaviour:
   sandRT: {fileID: 0}
   colorValueToAdd: 0.0025
   resolution: 128
-  spotSize: 10
+  spotSize: 15
 --- !u!1 &1612092086 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: b63571c3a3165e74d96b96ff33e12215, type: 3}
@@ -9245,7 +9245,7 @@ MonoBehaviour:
   sandRT: {fileID: 0}
   colorValueToAdd: 0.0025
   resolution: 128
-  spotSize: 10
+  spotSize: 15
 --- !u!1001 &1618018176
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9537,7 +9537,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: b63571c3a3165e74d96b96ff33e12215, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 1.0799999
+      value: 1.1199999
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: b63571c3a3165e74d96b96ff33e12215, type: 3}
       propertyPath: m_LocalRotation.w
@@ -9641,7 +9641,7 @@ MonoBehaviour:
   sandRT: {fileID: 0}
   colorValueToAdd: 0.0025
   resolution: 128
-  spotSize: 10
+  spotSize: 15
 --- !u!1001 &1745472330
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9846,7 +9846,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: b63571c3a3165e74d96b96ff33e12215, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 1.0799999
+      value: 1.1199999
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: b63571c3a3165e74d96b96ff33e12215, type: 3}
       propertyPath: m_LocalRotation.w
@@ -10037,7 +10037,7 @@ MonoBehaviour:
   sandRT: {fileID: 0}
   colorValueToAdd: 0.0025
   resolution: 128
-  spotSize: 10
+  spotSize: 15
 --- !u!1 &1839818680 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: b63571c3a3165e74d96b96ff33e12215, type: 3}
@@ -10085,7 +10085,7 @@ MonoBehaviour:
   sandRT: {fileID: 0}
   colorValueToAdd: 0.0025
   resolution: 128
-  spotSize: 10
+  spotSize: 15
 --- !u!1001 &1893624028
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10220,7 +10220,7 @@ MonoBehaviour:
   sandRT: {fileID: 0}
   colorValueToAdd: 0.0025
   resolution: 128
-  spotSize: 10
+  spotSize: 15
 --- !u!1 &1948801884 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: b63571c3a3165e74d96b96ff33e12215, type: 3}
@@ -10268,7 +10268,7 @@ MonoBehaviour:
   sandRT: {fileID: 0}
   colorValueToAdd: 0.0025
   resolution: 128
-  spotSize: 10
+  spotSize: 15
 --- !u!1 &1950855154 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: b63571c3a3165e74d96b96ff33e12215, type: 3}
@@ -10316,7 +10316,7 @@ MonoBehaviour:
   sandRT: {fileID: 0}
   colorValueToAdd: 0.0025
   resolution: 128
-  spotSize: 10
+  spotSize: 15
 --- !u!1001 &1953931766
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10451,7 +10451,7 @@ MonoBehaviour:
   sandRT: {fileID: 0}
   colorValueToAdd: 0.0025
   resolution: 128
-  spotSize: 10
+  spotSize: 15
 --- !u!1001 &1974644522
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10586,7 +10586,7 @@ MonoBehaviour:
   sandRT: {fileID: 0}
   colorValueToAdd: 0.0025
   resolution: 128
-  spotSize: 10
+  spotSize: 15
 --- !u!1 &1996918038 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: b63571c3a3165e74d96b96ff33e12215, type: 3}
@@ -10634,7 +10634,7 @@ MonoBehaviour:
   sandRT: {fileID: 0}
   colorValueToAdd: 0.0025
   resolution: 128
-  spotSize: 10
+  spotSize: 15
 --- !u!1001 &2000163243
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11030,7 +11030,7 @@ MonoBehaviour:
   sandRT: {fileID: 0}
   colorValueToAdd: 0.0025
   resolution: 128
-  spotSize: 10
+  spotSize: 15
 --- !u!1 &2078962741 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: b63571c3a3165e74d96b96ff33e12215, type: 3}
@@ -11078,7 +11078,7 @@ MonoBehaviour:
   sandRT: {fileID: 0}
   colorValueToAdd: 0.0025
   resolution: 128
-  spotSize: 10
+  spotSize: 15
 --- !u!1 &2119904270 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: b63571c3a3165e74d96b96ff33e12215, type: 3}
@@ -11126,7 +11126,7 @@ MonoBehaviour:
   sandRT: {fileID: 0}
   colorValueToAdd: 0.0025
   resolution: 128
-  spotSize: 10
+  spotSize: 15
 --- !u!1 &2120060743 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: b63571c3a3165e74d96b96ff33e12215, type: 3}
@@ -11174,7 +11174,7 @@ MonoBehaviour:
   sandRT: {fileID: 0}
   colorValueToAdd: 0.0025
   resolution: 128
-  spotSize: 10
+  spotSize: 15
 --- !u!1 &2132526449 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: b63571c3a3165e74d96b96ff33e12215, type: 3}
@@ -11222,7 +11222,7 @@ MonoBehaviour:
   sandRT: {fileID: 0}
   colorValueToAdd: 0.0025
   resolution: 128
-  spotSize: 10
+  spotSize: 15
 --- !u!1001 &2136752630
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11505,7 +11505,7 @@ MonoBehaviour:
   sandRT: {fileID: 0}
   colorValueToAdd: 0.0025
   resolution: 128
-  spotSize: 10
+  spotSize: 15
 --- !u!65 &2147271329
 BoxCollider:
   m_ObjectHideFlags: 0

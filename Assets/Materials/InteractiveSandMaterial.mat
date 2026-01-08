@@ -42,13 +42,13 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _NoiseScale: 1.1
+    - _NoiseScale: 1.42
     - _QueueControl: 0
     - _QueueOffset: 0
     m_Colors:
-    - _ColorBottom: {r: 0.38679245, g: 0.32985058, b: 0.19522065, a: 1}
+    - _ColorBottom: {r: 0.6289307, g: 0.56172687, b: 0.40939823, a: 1}
     - _ColorTop: {r: 0.8490566, g: 0.7762951, b: 0.6207725, a: 1}
-    - _SandHeightRange: {r: 0, g: 0.04, b: 0, a: 0}
+    - _SandHeightRange: {r: 0, g: 0.2, b: 0, a: 0}
   m_BuildTextureStacks: []
   m_AllowLocking: 1
 --- !u!114 &5251310191541499468

@@ -5,8 +5,8 @@ import socket
 
 
 def normalize(point):
-    new_x = ((point[0] - 0) / (1280)) * (7 - (-7)) + (-7)
-    new_y = ((point[1] - 0) / (720)) * (4 - (-4)) + (-4)
+    new_x = round(((point[0] - 0) / (1280)) * (7 - (-7)) + (-7), 5)
+    new_y = round(((point[1] - 0) / (720)) * (4 - (-4)) + (-4), 5)
     return [new_x, new_y]
 
 cap = cv2.VideoCapture(0)
