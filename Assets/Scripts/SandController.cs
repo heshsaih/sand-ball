@@ -22,7 +22,7 @@ public class SandController : MonoBehaviour
         CreateRenderTexture();
         SetRTWhite();
         SetMaterialTexture();
-        //InvokeRepeating(nameof(AddSandLayer), .1f, .1f);
+        InvokeRepeating(nameof(AddSandLayer), .1f, .3f);
         ExtendBoudOfMesh();
     }
 

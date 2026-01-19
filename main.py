@@ -1,6 +1,7 @@
 import cv2
 import time
 from cvzone.HandTrackingModule import HandDetector
+from cvzone.FaceDetectionModule import FaceDetector
 import socket
 
 
@@ -15,6 +16,7 @@ cap.set(3, 1280)
 cap.set(4, 720)
 
 detector = HandDetector(detectionCon=.8, maxHands=1)
+face_detector = FaceDetector()
 tolerance = 25
 previous_hands = []
 
@@ -47,7 +49,7 @@ while True:
                     is_stable = False
                     sent = False
                     break
-            
+
             if is_stable:
                 how_long_stable += dt
             else:
@@ -65,13 +67,14 @@ while True:
         for (_, lm) in enumerate(landmarks):
             new_point = normalize(lm)
             data.append(new_point)
-        
+
         print("Sending data...")
         socket.sendto(str.encode(str(data)), addr)
         how_long_stable = 0
         sent = True
 
     previous_hands = hands
+
     previous_time = current_time
     cv2.imshow("Hand", img)
     cv2.waitKey(1)
