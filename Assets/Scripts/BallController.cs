@@ -18,7 +18,7 @@ public class BallController : MonoBehaviour
     private Vector3 currentPos = new Vector3();
     private Vector3 initPos;
     [SerializeField]
-    private float tolerance = .1f;
+    private float tolerance = .05f;
     private int currentPointIndex = 0;
     private int previousPointIndex = 0;
     private int currentShape = 0;
@@ -33,6 +33,8 @@ public class BallController : MonoBehaviour
     private List<Vector3> recievedPoints;
     private bool shouldDrawReceived = false;
 
+    private string locker = "";
+
     private float transformY;
 
     private System.Random random = new System.Random();
@@ -42,7 +44,8 @@ public class BallController : MonoBehaviour
     void getRandomOffset(float mod = .1f)
     {
         randomOffset = new Vector3(UnityEngine.Random.Range(-1f, 1f), 0,
-                                   UnityEngine.Random.Range(-1f, 1f)) * mod;
+                                   UnityEngine.Random.Range(-1f, 1f)) *
+                       mod;
     }
 
     void Start()
@@ -72,14 +75,20 @@ public class BallController : MonoBehaviour
                 IPEndPoint ip = new IPEndPoint(IPAddress.Any, 0);
                 byte[] data = udpClient.Receive(ref ip);
                 string encoded = Encoding.UTF8.GetString(data);
-                parseReceivedPoints(encoded);
-                if (!shouldDrawReceived)
+                print("Waiting.....");
+                lock (locker)
                 {
-                    previousPointIndex = currentPointIndex;
+                    print("Got it");
+                    parseReceivedPoints(encoded);
+                    print(recievedPoints.Count);
+                    if (!shouldDrawReceived)
+                    {
+                        previousPointIndex = currentPointIndex;
+                    }
+                    currentPointIndex = 0;
+                    shouldDrawReceived = true;
+                    getRandomOffset(1);
                 }
-                shouldDrawReceived = true;
-                getRandomOffset(1);
-                currentPointIndex = 0;
             }
             catch (Exception e)
             {
@@ -92,10 +101,39 @@ public class BallController : MonoBehaviour
     {
         string[] foo = string.Join("", data.Split('[', ']', ' ')).Split(',');
         List<Vector3> result = new List<Vector3>();
+        int point_number = 0;
 
         try
         {
-            for (int i = 0; i < 41; i += 2)
+            print(foo[0]);
+            int type = int.Parse(foo[0]);
+            // hands = 21 points * 2 values
+            if (type == 0)
+            {
+                print("Got hands");
+                point_number = 41;
+            }
+            // face = 68 points * 2 values
+            else if (type == 1)
+            {
+                print("Got face");
+                point_number = 135;
+            }
+            else
+            {
+                print($"Unrecognizable message type: ${type}");
+                return;
+            }
+        }
+        catch (Exception e)
+        {
+            print($"Failed while parsing the message typr: ${e}");
+            return;
+        }
+
+        try
+        {
+            for (int i = 1; i < point_number; i += 2)
             {
                 float x =
                     float.Parse(foo[i], CultureInfo.InvariantCulture.NumberFormat);
@@ -104,9 +142,9 @@ public class BallController : MonoBehaviour
                 result.Add(new Vector3(x, transformY, y));
             }
             float returnX =
-                float.Parse(foo[0], CultureInfo.InvariantCulture.NumberFormat);
-            float returnY =
                 float.Parse(foo[1], CultureInfo.InvariantCulture.NumberFormat);
+            float returnY =
+                float.Parse(foo[2], CultureInfo.InvariantCulture.NumberFormat);
             result.Add(new Vector3(returnX, transformY, returnY));
             recievedPoints = result;
         }
@@ -202,60 +240,62 @@ public class BallController : MonoBehaviour
 
     void Update()
     {
-        List<Vector3> currentShapePoints;
-        if (shouldDrawReceived && recievedPoints != null)
+        lock (locker)
         {
-            currentShapePoints = recievedPoints;
-        }
-        else
-        {
-            currentShapePoints = points[currentShape];
-        }
-
-        if (currentPointIndex >= currentShapePoints.Count)
-        {
-            if (shouldDrawReceived)
+            List<Vector3> currentShapePoints;
+            if (shouldDrawReceived && recievedPoints != null)
             {
-                shouldDrawReceived = false;
-                currentPointIndex = previousPointIndex;
+                currentShapePoints = recievedPoints;
             }
             else
             {
-                currentShape = (currentShape + 1) % points.Count;
-                currentPointIndex = 0;
+                currentShapePoints = points[currentShape];
             }
-        }
 
-        Vector3 effectivePos = currentShapePoints[currentPointIndex];
-        if (!shouldDrawReceived)
-        {
+            int currentPointIndexCopy = currentPointIndex;
+
+            if (currentPointIndex >= currentShapePoints.Count)
+            {
+                if (shouldDrawReceived)
+                {
+                    shouldDrawReceived = false;
+                    currentPointIndex = previousPointIndex;
+                }
+                else
+                {
+                    currentShape = (currentShape + 1) % points.Count;
+                    currentPointIndex = 0;
+                }
+            }
+
+            Vector3 effectivePos = currentShapePoints[currentPointIndex];
             effectivePos += randomOffset;
-        }
 
-        float distance = Vector3.Distance(currentPos, effectivePos);
+            float distance = Vector3.Distance(currentPos, effectivePos);
 
-        if (distance < tolerance)
-        {
-            currentPointIndex++;
-            if (!shouldDrawReceived)
+            if (distance < tolerance)
             {
-                rb.angularDamping = UnityEngine.Random.Range(2f, 4f);
-                velocityModifier = UnityEngine.Random.Range(.5f, 1.5f);
-                getRandomOffset(.2f);
+                currentPointIndex++;
+                if (!shouldDrawReceived)
+                {
+                    rb.angularDamping = UnityEngine.Random.Range(2f, 4f);
+                    velocityModifier = UnityEngine.Random.Range(.5f, 1.5f);
+                    getRandomOffset(1f * ((float)currentPointIndex /
+                                          (float)currentShapePoints.Count));
+                }
+                else
+                {
+                    rb.angularDamping = speed * 2;
+                    velocityModifier = 2f;
+                }
+                return;
             }
-            else
-            {
-                rb.angularDamping = speed * 2;
-                velocityModifier = 2f;
-            }
-            return;
+
+            Vector3 direction = (currentPos - effectivePos) / distance;
+            Vector3 result = direction * speed * velocityModifier;
+            rb.AddForce(result);
+
+            currentPos = initPos - transform.position;
         }
-
-        Vector3 direction = (currentPos - effectivePos) / distance;
-        Vector3 result = direction * speed * velocityModifier;
-        rb.AddForce(result);
-        print(result);
-
-        currentPos = initPos - transform.position;
     }
 }

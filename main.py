@@ -56,7 +56,7 @@ landmark_detector.loadModel(LBFmodel_file)
 socket = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
 addr = ("127.0.0.1", 42069)
 
-wait_time = random.randint(3, 5)
+wait_time = random.randint(60, 120)
 previous_time = time.time()
 
 while True:
@@ -92,8 +92,9 @@ while True:
                 print("No hands data, fallback to face")
                 to_send = face
                 found_value = True 
+                hands_or_face = 1
 
-        if hands_or_face == 1:
+        if hands_or_face == 1 and not found_value:
             if face is not None and face.any():
                 to_send = face
                 found_value = True 
@@ -101,21 +102,27 @@ while True:
                 print("No face data, fallback to hands")
                 to_send = hands[0]["lmList"]
                 found_value = True 
+                hands_or_face = 0
 
         if found_value:
             print("There is some data")
+            print(len(to_send))
             data = []
 
             for (_, lm) in enumerate(to_send):
                 new_point = normalize(lm)
+                if type(new_point[0]) is np.float32:
+                    new_point[0] = new_point[0].item()
+                    new_point[1] = new_point[1].item()
                 data.append(new_point)
 
             print(f"Sending {hands_or_face == 0 and 'hands' or 'face'} data...")
-            socket.sendto(str.encode(f"{hands_or_face}" + str(data)), addr)
+            foo = str.encode(f"{hands_or_face}" + str(data))
+            socket.sendto(str.encode(f"{hands_or_face}," + str(data)), addr)
         else:
             print("No data")
 
-        wait_time = random.randint(3, 5)
+        wait_time = random.randint(60, 120)
         previous_time = current_time
 
     cv2.imshow("Hand", img)
