@@ -100,3 +100,5 @@ InitTestScene*.unity*
 
 .vscode
 .vsconfig
+.venv
+data

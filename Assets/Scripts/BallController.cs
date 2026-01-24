@@ -39,10 +39,10 @@ public class BallController : MonoBehaviour
     private float velocityModifier = 1.0f;
     private Vector3 randomOffset;
 
-    void getRandomOffset(float mod = 1)
+    void getRandomOffset(float mod = .1f)
     {
         randomOffset = new Vector3(UnityEngine.Random.Range(-1f, 1f), 0,
-                                   UnityEngine.Random.Range(-1f, 1f));
+                                   UnityEngine.Random.Range(-1f, 1f)) * mod;
     }
 
     void Start()
@@ -78,7 +78,7 @@ public class BallController : MonoBehaviour
                     previousPointIndex = currentPointIndex;
                 }
                 shouldDrawReceived = true;
-                getRandomOffset(2);
+                getRandomOffset(1);
                 currentPointIndex = 0;
             }
             catch (Exception e)
@@ -239,9 +239,9 @@ public class BallController : MonoBehaviour
             currentPointIndex++;
             if (!shouldDrawReceived)
             {
-                rb.angularDamping = UnityEngine.Random.Range(.5f, 2f);
-                velocityModifier = UnityEngine.Random.Range(1f, 1.5f);
-                getRandomOffset(.1f);
+                rb.angularDamping = UnityEngine.Random.Range(2f, 4f);
+                velocityModifier = UnityEngine.Random.Range(.5f, 1.5f);
+                getRandomOffset(.2f);
             }
             else
             {
