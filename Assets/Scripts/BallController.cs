@@ -147,6 +147,8 @@ public class BallController : MonoBehaviour
                 float.Parse(foo[2], CultureInfo.InvariantCulture.NumberFormat);
             result.Add(new Vector3(returnX, transformY, returnY));
             recievedPoints = result;
+            rb.angularDamping = speed * 2;
+            velocityModifier = 2f;
         }
         catch (Exception e)
         {
